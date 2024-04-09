@@ -21,6 +21,7 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.2.1",
     "prettier": "^3.2.1",
     "vite": "^5.0.11"
