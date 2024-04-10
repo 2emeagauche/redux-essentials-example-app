@@ -41,11 +41,6 @@ export const AddPostForm = () => {
           value={title}
           onChange={onTitleChanged}
         />
-        <label htmlFor="postUser">User</label>
-        <select id="postUser" value={userId} onChange={handleUser}>
-          <option value=""></option>
-          {usersOptions}
-        </select>
         <label htmlFor="postContent">Post Content:</label>
         <input
           type="text"
@@ -54,6 +49,11 @@ export const AddPostForm = () => {
           value={content}
           onChange={onContentChanged}
         />
+        <label htmlFor="postUser">User</label>
+        <select id="postUser" value={userId} onChange={handleUser}>
+          <option value=""></option>
+          {usersOptions}
+        </select>
         <button type='submit' disabled={!canSave}>Save Post</button>
       </form>
     </section>
